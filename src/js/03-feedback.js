@@ -5,7 +5,6 @@ const emailInput = feedbackForm.querySelector('input[name="email"]');
 const messageInput = feedbackForm.querySelector('textarea[name="message"]');
 
 const saveFormStateThrottled = throttle(saveFormState, 500);
-
 window.addEventListener('load', () => {
   const savedFormState = localStorage.getItem('feedback-form-state');
 
